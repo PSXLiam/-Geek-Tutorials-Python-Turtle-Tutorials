@@ -12,13 +12,15 @@ pendown()
 points = 1
 
 #Draw star
-while points < 5:
-    forward(250)
+while points <= 5:
+    left(72)
+    forward(50)
     right(144)
+    forward(50)
     points = points + 1
 end_fill()
 
-#Fill shape then hide turtle
+#Hide turtle
 hideturtle()
 
 exitonclick()
