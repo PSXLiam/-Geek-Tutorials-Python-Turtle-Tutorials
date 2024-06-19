@@ -13,6 +13,17 @@ for i in range(4):
     forward(150)
     left(90)
 
+#move to next area
+penup()
+goto (-175, 100)
+pendown()
+
+#Draw outlined multicolour square
+for i in ["yellow", "red", "blue", "purple"]:
+    color(i)
+    forward(150)
+    left(90)
+
 #Hide turtle
 hideturtle()
 
