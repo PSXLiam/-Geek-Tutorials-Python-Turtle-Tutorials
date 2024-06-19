@@ -24,6 +24,19 @@ for i in ["yellow", "red", "blue", "purple"]:
     forward(150)
     left(90)
 
+#move to next area
+penup()
+goto (0, 100)
+pendown()
+
+#Draw filled square
+color("orange", "yellow")
+begin_fill()
+for i in range(4):
+    forward(150)
+    left(90)
+end_fill()
+
 #Hide turtle
 hideturtle()
 
