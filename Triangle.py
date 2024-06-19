@@ -1,7 +1,7 @@
 from turtle import *
 
 #Initialise turtle
-speed(1)
+speed(0)
 bgcolor("blue")
 penup()
 goto(-150, -150)
@@ -10,15 +10,12 @@ begin_fill()
 pendown()
 
 #Draw triangle
-forward(300)
-left(120)
-forward(300)
-left(120)
-forward(300)
-left(120)
+for i in range(3):
+    forward(300)
+    left(120)
 
 #Fill shape then hide turtle
 end_fill()
 hideturtle()
 
-done()
+exitonclick()
