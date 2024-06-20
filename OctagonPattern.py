@@ -6,12 +6,14 @@ bgcolor("black")
 color("greenyellow")
 pensize(5)
 
-for i in range(8):
-    left(45)
+sides = 8
+
+for i in range(sides):
+    left(360/sides)
     #Draw Octagon
-    for i in range (8):
+    for i in range (sides):
         forward(100)
-        left(45)
+        left(360/sides)
 
 #Hide turtle
 hideturtle()
