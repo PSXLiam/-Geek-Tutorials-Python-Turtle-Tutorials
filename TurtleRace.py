@@ -25,4 +25,33 @@ for i in range(2):
     right(90)
 end_fill()
 
+#Finish Line
+gap_size = 20
+shape("square")
+penup()
+
+#White Squares Row 1
+color("white")
+for i in range(10):
+    goto(250, (170 - (i * gap_size * 2)))
+    stamp()
+
+#Black Squares Row 1
+color("black")
+for i in range(10):
+    goto(250, (210 - gap_size) - (i * gap_size * 2))
+    stamp()
+
+#White Squares Row 2
+color("white")
+for i in range(10):
+    goto(250 + gap_size, (210 - gap_size) - (i * gap_size * 2))
+    stamp()
+
+#Black Squares Row 2
+color("black")
+for i in range(10):
+    goto(250 + gap_size, (170 - (i * gap_size * 2)))
+    stamp()
+
 exitonclick()
