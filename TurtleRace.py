@@ -54,18 +54,22 @@ for i in range(10):
     goto(250 + gap_size, (170 - (i * gap_size * 2)))
     stamp()
 
+#Initialize race turtle
+def race_turtle(turtle_colour, turtle_ycor):
+    turtle = Turtle()
+    turtle.hideturtle()
+    turtle.penup()
+    turtle.goto(-300, turtle_ycor)
+    turtle.backward(125)
+    turtle.showturtle()
+    turtle.speed(1)
+    turtle.color(turtle_colour)
+    turtle.shape("turtle")
+    turtle.shapesize(1.5)
+    turtle.goto(-300, turtle_ycor)
+    turtle.pendown()
+
 #Turtle 1 - Blue
-blue_turtle = Turtle()
-blue_turtle.hideturtle()
-blue_turtle.penup()
-blue_turtle.goto(-300, 150)
-blue_turtle.backward(125)
-blue_turtle.showturtle()
-blue_turtle.speed(1)
-blue_turtle.color("cyan")
-blue_turtle.shape("turtle")
-blue_turtle.shapesize(1.5)
-blue_turtle.goto(-300, 150)
-blue_turtle.pendown()
+blue_turtle = race_turtle("cyan", 150)
 
 exitonclick()
