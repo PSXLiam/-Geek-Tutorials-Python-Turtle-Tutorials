@@ -54,4 +54,18 @@ for i in range(10):
     goto(250 + gap_size, (170 - (i * gap_size * 2)))
     stamp()
 
+#Turtle 1 - Blue
+blue_turtle = Turtle()
+blue_turtle.hideturtle()
+blue_turtle.penup()
+blue_turtle.goto(-300, 150)
+blue_turtle.backward(125)
+blue_turtle.showturtle()
+blue_turtle.speed(1)
+blue_turtle.color("cyan")
+blue_turtle.shape("turtle")
+blue_turtle.shapesize(1.5)
+blue_turtle.goto(-300, 150)
+blue_turtle.pendown()
+
 exitonclick()
