@@ -72,4 +72,13 @@ def race_turtle(turtle_colour, turtle_ycor):
 #Turtle 1 - Blue
 blue_turtle = race_turtle("cyan", 150)
 
+#Turtle 2 - Pink
+pink_turtle = race_turtle("magenta", 50)
+
+#Turtle 3 - Yellow
+yellow_turtle = race_turtle("yellow", -50)
+
+#Turtle 4 - Green
+green_turtle = race_turtle("lime", -150)
+
 exitonclick()
