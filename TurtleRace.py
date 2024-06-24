@@ -1,5 +1,6 @@
 from turtle import *
 from random import *
+import time
 
 #Screen Setup
 setup(800, 500)
@@ -68,6 +69,7 @@ def race_turtle(turtle_colour, turtle_ycor):
     turtle.shapesize(1.5)
     turtle.goto(-300, turtle_ycor)
     turtle.pendown()
+    return turtle
 
 #Turtle 1 - Blue
 blue_turtle = race_turtle("cyan", 150)
@@ -80,5 +82,12 @@ yellow_turtle = race_turtle("yellow", -50)
 
 #Turtle 4 - Green
 green_turtle = race_turtle("lime", -150)
+
+#Pause 1 second before race
+time.sleep(1)
+
+#Move the turtles
+while blue_turtle.xcor() <= 230:
+    blue_turtle.forward(randint(1, 10))
 
 exitonclick()
