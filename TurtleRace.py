@@ -93,14 +93,24 @@ while blue_turtle.xcor() <= 230 and pink_turtle.xcor() <= 230 and yellow_turtle.
     yellow_turtle.forward(randint(1, 10))
     green_turtle.forward(randint(1, 10))
 
+#Celebration spin
+def celebrate(race_turtle):
+    for i in range(72):
+        race_turtle.right(5)
+        race_turtle.shapesize(2.5)
+
 #Find winner
 if blue_turtle.xcor() >= 230:
     print("Blue Wins!")
+    celebrate(blue_turtle)
 elif pink_turtle.xcor() >= 230:
     print("Pink Wins!")
+    celebrate(pink_turtle)
 elif yellow_turtle.xcor() >= 230:
     print("Yellow Wins!")
+    celebrate(yellow_turtle)
 else:
     print("Green Wins!")
+    celebrate(green_turtle)
 
 exitonclick()
