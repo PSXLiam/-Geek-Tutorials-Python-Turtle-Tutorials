@@ -87,7 +87,10 @@ green_turtle = race_turtle("lime", -150)
 time.sleep(1)
 
 #Move the turtles
-while blue_turtle.xcor() <= 230:
+while blue_turtle.xcor() <= 230 and pink_turtle.xcor() <= 230 and yellow_turtle.xcor() <= 230 and green_turtle.xcor() <= 230:
     blue_turtle.forward(randint(1, 10))
+    pink_turtle.forward(randint(1, 10))
+    yellow_turtle.forward(randint(1, 10))
+    green_turtle.forward(randint(1, 10))
 
 exitonclick()
