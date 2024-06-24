@@ -93,4 +93,14 @@ while blue_turtle.xcor() <= 230 and pink_turtle.xcor() <= 230 and yellow_turtle.
     yellow_turtle.forward(randint(1, 10))
     green_turtle.forward(randint(1, 10))
 
+#Find winner
+if blue_turtle.xcor() >= 230:
+    print("Blue Wins!")
+elif pink_turtle.xcor() >= 230:
+    print("Pink Wins!")
+elif yellow_turtle.xcor() >= 230:
+    print("Yellow Wins!")
+else:
+    print("Green Wins!")
+
 exitonclick()
