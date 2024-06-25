@@ -26,4 +26,12 @@ for i in range(20):
     pendown()
     make_star()
 
+#Draw Full Moon
+penup()
+goto(-300, 100)
+pendown()
+begin_fill()
+circle(50)
+end_fill()
+
 exitonclick()
