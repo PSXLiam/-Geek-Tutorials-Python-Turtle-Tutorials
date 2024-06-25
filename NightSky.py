@@ -1,4 +1,5 @@
 from turtle import *
+from random import randint
 
 #Screen Setup
 setup(800, 500)
@@ -16,7 +17,13 @@ def make_star():
         right(144)
     end_fill()
 
-#Draw Star
-make_star()
+#Draw Stars to Random Locations
+for i in range(20):
+    x = randint(-400, 400)
+    y = randint(-250, 250)
+    penup()
+    goto(x, y)
+    pendown()
+    make_star()
 
 exitonclick()
