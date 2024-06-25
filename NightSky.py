@@ -34,4 +34,14 @@ begin_fill()
 circle(50)
 end_fill()
 
+#Make Crescent Moon
+penup()
+goto(-280, 120)
+pendown()
+color("midnight blue")
+begin_fill()
+circle(50)
+end_fill()
+
+hideturtle()
 exitonclick()
